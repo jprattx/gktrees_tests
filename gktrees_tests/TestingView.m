@@ -27,6 +27,8 @@
 @synthesize rTreeMaxChildren;
 @synthesize quadtreeMinCellSize;
 
+@synthesize rTreeSplitStrategy;
+
 
 - (void) awakeFromNib
 {
@@ -38,10 +40,13 @@
     [roamingHeightSlider setFloatValue:[self roamingRectHeight]];
     [roamingHeightTextField setFloatValue:[self roamingRectHeight]];
     
+    [self setRTreeSplitStrategy:GKRTreeSplitStrategyHalve];
+    [rTreeSplitStrategyPopUpButton selectItemAtIndex:[self rTreeSplitStrategy]];
+    
     
     roamingRectBPath = [[NSBezierPath alloc] init];
 
-    [roamingRectBPath appendBezierPathWithRect:NSMakeRect(0,0, [self roamingRectWidth], [self roamingRectHeight])];
+    [roamingRectBPath appendBezierPathWithRect:NSMakeRect(0,0, 1, 1)];
     
     [roamingRectBPath setLineWidth:5];
     
@@ -83,8 +88,22 @@
     
     NSScrollView *scrollView = (NSScrollView *)[[self superview] superview];
     [scrollView setScrollsDynamically:YES];
+    
+
 }
 
+- (void) viewDidLoad
+{
+    NSTrackingArea *area = [[NSTrackingArea alloc] initWithRect:[self bounds] options:NSTrackingActiveInKeyWindow | NSTrackingMouseEnteredAndExited owner:self userInfo:nil];  
+    
+    [self addTrackingArea:area];
+    
+}
+
+- (void) mouseEntered
+{
+    [[self window] makeFirstResponder:self];
+}
 
 
 - (IBAction) makeTreesAndGenerateBoxesForTrees:(id) sender
@@ -125,7 +144,7 @@
         [rTree addElement:boxPath 
           boundingRectMin:quad.quadMin 
           boundingRectMax:quad.quadMax 
-            splitStrategy:GKRTreeSplitStrategyLinear
+            splitStrategy:GKRTreeSplitStrategyHalve
          ];
 
     }
@@ -196,8 +215,8 @@
         {
             GKQuad quadR;
             
-            quadR.quadMin = (vector_float2){(float)[roamingRectBPath bounds].origin.x,[roamingRectBPath bounds].origin.y};
-            quadR.quadMax = (vector_float2){(float)NSMaxX([roamingRectBPath bounds]),(float)NSMaxY([roamingRectBPath bounds])};
+            quadR.quadMin = (vector_float2){[roamingRectBPath bounds].origin.x,[roamingRectBPath bounds].origin.y};
+            quadR.quadMax = (vector_float2){NSMaxX([roamingRectBPath bounds]),NSMaxY([roamingRectBPath bounds])};
             
             roamingRectHitArray = [quadtree elementsInQuad: quadR]; 
         }
@@ -211,7 +230,7 @@
         
         
         NSString *hitCountString = [NSString 
-         stringWithFormat:@"%lu/ %lu objects",
+         stringWithFormat:@"%lu / %lu objects",
          (unsigned long)[roamingRectHitArray count], 
                                     (unsigned long)[allObjects count]];
         
@@ -297,7 +316,10 @@
     
 }
 
-
+- (IBAction)changeRTSplitStrategy:(id)sender
+ {
+     [self setRTreeSplitStrategy:[sender indexOfSelectedItem]];
+ }
 
 - (IBAction)changeRTMaxChildren:(id)sender
 {

@@ -40,6 +40,10 @@
     IBOutlet NSTextField *quadtreeMinCSTextField;
     IBOutlet NSTextField *rTreeMaxChTextField;
     
+    IBOutlet NSPopUpButton *rTreeSplitStrategyPopUpButton;
+    
+    GKRTreeSplitStrategy rTreeSplitStrategy;
+    
     float maxBoxWidth;
     float maxBoxHeight;
     int boxesGenerated;
@@ -65,6 +69,7 @@ typedef NS_ENUM(NSUInteger, SpatialTreeType) {
 - (IBAction)changeMaxBoxHeight:(id)sender;
 - (IBAction)changeBoxesGenerated:(id)sender;
 
+- (IBAction)changeRTSplitStrategy:(id)sender;
 - (IBAction)changeRTMaxChildren:(id)sender;
 - (IBAction)changeQTMinCSize:(id)sender;
 
@@ -92,5 +97,7 @@ typedef NS_ENUM(NSUInteger, SpatialTreeType) {
 
 @property int rTreeMaxChildren;
 @property float quadtreeMinCellSize;
+
+@property GKRTreeSplitStrategy rTreeSplitStrategy;
 
 @end
