@@ -127,11 +127,12 @@
     
     for (int i = 0; i < [self boxesGenerated]; i = i + 1) {
         
-        float width = (rand() % (int)[self maxBoxWidth]);
-        float height = (rand() % (int)[self maxBoxHeight]);
+        float width = (rand() % (int)[self maxBoxWidth]) + 1;
+        float height = (rand() % (int)[self maxBoxHeight]) +1 ;
      
+        
         NSBezierPath *boxPath = [[NSBezierPath alloc] init];
-        [boxPath appendBezierPathWithRect:NSMakeRect((float)(rand() % (int)[self bounds].size.width), (rand() % (int)[self bounds].size.height), width, height)];
+        [boxPath appendBezierPathWithRect:NSMakeRect((float)(rand() % (int)[self bounds].size.width) +1, (rand() % (int)[self bounds].size.height) +1, width, height)];
         [allObjects addObject:boxPath];
         
         
