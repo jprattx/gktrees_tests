@@ -144,8 +144,7 @@
         [rTree addElement:boxPath 
           boundingRectMin:quad.quadMin 
           boundingRectMax:quad.quadMax 
-            splitStrategy:GKRTreeSplitStrategyHalve
-         ];
+            splitStrategy:[self rTreeSplitStrategy]];
 
     }
 
