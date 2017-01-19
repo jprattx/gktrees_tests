@@ -1,0 +1,304 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BBDD341D1E305C9C008BDE2A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BBDD341C1E305C9C008BDE2A /* AppDelegate.m */; };
+		BBDD34201E305C9C008BDE2A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BBDD341F1E305C9C008BDE2A /* main.m */; };
+		BBDD34221E305C9C008BDE2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBDD34211E305C9C008BDE2A /* Assets.xcassets */; };
+		BBDD34251E305C9D008BDE2A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBDD34231E305C9D008BDE2A /* MainMenu.xib */; };
+		BBDD342D1E305CAD008BDE2A /* TestingView.m in Sources */ = {isa = PBXBuildFile; fileRef = BBDD342C1E305CAD008BDE2A /* TestingView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BBDD34181E305C9C008BDE2A /* gktrees_tests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gktrees_tests.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBDD341B1E305C9C008BDE2A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BBDD341C1E305C9C008BDE2A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BBDD341F1E305C9C008BDE2A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BBDD34211E305C9C008BDE2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BBDD34241E305C9D008BDE2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		BBDD34261E305C9D008BDE2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBDD342C1E305CAD008BDE2A /* TestingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestingView.m; sourceTree = "<group>"; };
+		BBDD342E1E305CBA008BDE2A /* TestingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestingView.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BBDD34151E305C9C008BDE2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BBDD340F1E305C9C008BDE2A = {
+			isa = PBXGroup;
+			children = (
+				BBDD341A1E305C9C008BDE2A /* gktrees_tests */,
+				BBDD34191E305C9C008BDE2A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BBDD34191E305C9C008BDE2A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BBDD34181E305C9C008BDE2A /* gktrees_tests.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BBDD341A1E305C9C008BDE2A /* gktrees_tests */ = {
+			isa = PBXGroup;
+			children = (
+				BBDD341B1E305C9C008BDE2A /* AppDelegate.h */,
+				BBDD341C1E305C9C008BDE2A /* AppDelegate.m */,
+				BBDD34211E305C9C008BDE2A /* Assets.xcassets */,
+				BBDD34231E305C9D008BDE2A /* MainMenu.xib */,
+				BBDD342E1E305CBA008BDE2A /* TestingView.h */,
+				BBDD342C1E305CAD008BDE2A /* TestingView.m */,
+				BBDD34261E305C9D008BDE2A /* Info.plist */,
+				BBDD341E1E305C9C008BDE2A /* Supporting Files */,
+			);
+			path = gktrees_tests;
+			sourceTree = "<group>";
+		};
+		BBDD341E1E305C9C008BDE2A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BBDD341F1E305C9C008BDE2A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BBDD34171E305C9C008BDE2A /* gktrees_tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBDD34291E305C9D008BDE2A /* Build configuration list for PBXNativeTarget "gktrees_tests" */;
+			buildPhases = (
+				BBDD34141E305C9C008BDE2A /* Sources */,
+				BBDD34151E305C9C008BDE2A /* Frameworks */,
+				BBDD34161E305C9C008BDE2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = gktrees_tests;
+			productName = gktrees_tests;
+			productReference = BBDD34181E305C9C008BDE2A /* gktrees_tests.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BBDD34101E305C9C008BDE2A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = Noctivagous;
+				TargetAttributes = {
+					BBDD34171E305C9C008BDE2A = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = BBDD34131E305C9C008BDE2A /* Build configuration list for PBXProject "gktrees_tests" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BBDD340F1E305C9C008BDE2A;
+			productRefGroup = BBDD34191E305C9C008BDE2A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BBDD34171E305C9C008BDE2A /* gktrees_tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BBDD34161E305C9C008BDE2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBDD34221E305C9C008BDE2A /* Assets.xcassets in Resources */,
+				BBDD34251E305C9D008BDE2A /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BBDD34141E305C9C008BDE2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBDD342D1E305CAD008BDE2A /* TestingView.m in Sources */,
+				BBDD34201E305C9C008BDE2A /* main.m in Sources */,
+				BBDD341D1E305C9C008BDE2A /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BBDD34231E305C9D008BDE2A /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BBDD34241E305C9D008BDE2A /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BBDD34271E305C9D008BDE2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		BBDD34281E305C9D008BDE2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		BBDD342A1E305C9D008BDE2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = gktrees_tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "nctvgs.gktrees-tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BBDD342B1E305C9D008BDE2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = gktrees_tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "nctvgs.gktrees-tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BBDD34131E305C9C008BDE2A /* Build configuration list for PBXProject "gktrees_tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBDD34271E305C9D008BDE2A /* Debug */,
+				BBDD34281E305C9D008BDE2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BBDD34291E305C9D008BDE2A /* Build configuration list for PBXNativeTarget "gktrees_tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBDD342A1E305C9D008BDE2A /* Debug */,
+				BBDD342B1E305C9D008BDE2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BBDD34101E305C9C008BDE2A /* Project object */;
+}
